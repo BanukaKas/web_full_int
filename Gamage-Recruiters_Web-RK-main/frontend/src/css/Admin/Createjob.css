@@ -1,0 +1,159 @@
+.admin-overview-content {
+    display: flex;
+    flex-grow: 1;
+  }
+.gyskk-container{
+  
+    display: flex;
+    justify-content:center;
+     margin: auto;
+      height: auto;
+      margin-top:80px !important;
+      width: 70%;
+  }
+  .gyskk-content h2{
+     font-size:20px;
+     margin-top:60px;
+     margin-bottom:20px;
+  }
+  .gyskk-form{
+      width:850px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap:80px;
+  }
+  .gyskk-input-group{
+      display: flex;
+    flex-direction: column;
+  }
+  .gyskk-label{
+      display: block;
+      font-weight: 500;
+      padding:10px 0;
+  }
+  .gyskk-input
+  
+  {
+      width:100%;
+      padding:10px;
+      border: 1px solid #ccc;
+      border-radius:5px;
+      
+  }
+  .salary-input {
+      display: flex;
+      align-items: center;
+    }
+    
+    .salary-input span {
+      padding: 10px;
+      background: #f0f0f0;
+      border: 1px solid #f0eded;
+      border-right: none;
+      border-radius: 5px 0 0 5px;
+    }
+  
+  .gyskk-input-textarea textarea {
+  
+      width:100% !important;
+      padding:10px;
+      border: 1px solid #ccc;
+      border-radius:5px;
+      height:200px;
+      background-color:#f0f0f0 ;
+      
+    }
+  
+  .submit-btn{
+      display: block;
+      margin: 20px auto 0; /* Centers the button */
+      background-color:#141a7e ;
+      color: white;
+      width:200px;
+      padding:10px;
+      font-size:15px;
+      font-weight: 500;
+      border-radius:5px;
+     
+  }
+  /* Footer */
+.footer {
+    width: 100%;
+    background: #000;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: auto; /* Ensures the footer stays at the bottom */
+}
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .gyskk-container {
+      display: flex;
+       justify-content: center;
+       align-items: center;
+        margin: auto;
+        margin-left:0;
+        margin-top: 40px !important;
+        padding: 15px;
+        width:100%;
+    }
+  
+    .gyskk-form {
+        grid-template-columns: 1fr; /* Switch to single-column layout */
+        gap: 20px;
+        width: 100%;
+  
+    }
+    .gyskk-input,
+    .gyskk-input-textarea textarea {
+    width: 100%;
+}
+
+  
+    .submit-btn {
+        width: 200px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gyskk-container {
+      display: flex;
+       justify-content: center;
+       align-items: center;
+        margin:0;
+        margin-left:0;
+        margin-top: 40px !important;
+         width:100%;
+    }
+  
+      .gyskk-content h2 {
+        text-align: center;
+        font-size: 18px;
+        margin-top:70px;
+
+    }
+    .gyskk-form{
+        width:100%;
+        margin:0;
+    }
+  
+    .gyskk-label {
+        font-size: 14px;
+    }
+  
+    .gyskk-input,
+    .gyskk-input-textarea textarea {
+        padding: 8px;
+        width:100%;
+    }
+  
+    .salary-input span {
+        padding: 8px;
+    }
+  
+    .submit-btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+  }
+  

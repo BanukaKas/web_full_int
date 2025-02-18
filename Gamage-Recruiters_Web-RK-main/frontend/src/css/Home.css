@@ -1,0 +1,162 @@
+/* Home.css */
+
+/* General Container */
+.user-home-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the full viewport height */
+}
+
+/* Content Pushing Footer */
+.user-home-main-content {
+    flex-grow: 1;
+    padding-bottom: 100px; /* Adds more space between content and footer */
+}
+
+/* Hero Section */
+.user-home-hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+    color: white;
+    background-image: url('../assets/Admin-home-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 50px; /* Adds extra margin to push the footer down */
+}
+
+.user-home-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.user-home-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+    text-align: left; /* Align content to the left */
+    transform: translate(50px, 50px); /* Shift content to the right and down */
+}
+
+.user-home-hero-title {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 200px;
+}
+
+.user-home-hero-description {
+    font-size: 18px;
+    margin-left: 150px;
+}
+
+.user-home-contact-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    align-items:center;
+    height:50px;
+    width:200px;
+    background: transparent;
+    color: white;
+    border: 3px solid white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-left:  350px;
+}
+
+.user-home-contact-button:hover {
+    background: white;
+    color: black;
+}
+
+/* Industries Section */
+.user-home-industries-section {
+    text-align: center;
+    padding: 80px 20px; /* Increased padding to push footer down */
+}
+
+.user-home-industries-title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.user-home-industries-image {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    background: #000;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: auto; /* Ensures the footer stays at the bottom */
+}
+
+/* Add Space to Enable Scrolling */
+body {
+    padding-bottom: 200px; /* Additional padding for more scrollable space */
+}
+
+/* 📱 Mobile View Adjustments */
+@media (max-width: 768px) {
+    /* Adjust Hero Section */
+    .user-home-hero-section {
+        height: 60vh; /* Reduce height for mobile */
+        padding-bottom: 30px; /* Adjust padding */
+    }
+
+    .user-home-hero-content {
+        text-align: center; /* Center align text */
+        transform: translate(0, 0); /* Remove shift effect */
+        padding: 15px;
+    }
+
+    .user-home-hero-title {
+        font-size: 28px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-left: 20px;
+    }
+    
+    .user-home-hero-description {
+        font-size: 9px;
+        margin-left: 10px;
+    }
+    
+    .user-home-contact-button {
+        padding: 12px 24px;
+        font-size: 8px;
+        background: transparent;
+        color: white;
+        border: 2px solid white;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        margin-left:  20px;
+    }
+
+    /* Adjust Industries Section */
+    .user-home-industries-section {
+        padding: 40px 10px; /* Reduce padding */
+    }
+
+    .user-home-industries-title {
+        font-size: 24px; /* Smaller title */
+    }
+
+    .user-home-industries-image {
+        max-width: 100%;
+        width: 90%; /* Make image responsive */
+    }
+}
+

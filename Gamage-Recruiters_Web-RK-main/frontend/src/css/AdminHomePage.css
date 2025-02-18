@@ -1,0 +1,108 @@
+.gyskk-AdminHomePage-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.gyskk-AdminHomePage-content {
+  flex: 1;
+}
+
+.gyskk-background-image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; 
+  text-align: center;
+  color: white;
+  background-image: url('../assets/Admin-home-background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 100px;
+  margin-bottom: 5cm; /* Added 5cm white space below the background image */
+}
+
+.gyskk-heading {
+  margin-left: 50vh;
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin-bottom: 0; 
+  text-align: right; /* Added to align heading to the right */
+}
+
+.gyskk-text1 {
+  padding-top: 0; 
+  margin-left: 100vh; 
+  font-size: 1rem;
+  font-weight: bolder;
+  font-family: "Konkhmer Sleokchher", sans-serif;
+  color: white;
+  text-align: right; 
+}
+
+.gyskk-text2 {
+  margin-top: 1px;
+  margin-left: 90vh;
+  padding-left: 5%;
+  font-size: 1rem;
+  font-weight: bolder;
+  font-family: "Konkhmer Sleokchher", sans-serif;
+  color: white;
+  text-align: right; 
+}
+
+.gyskk-get-start-btn {
+  margin-left: 145vh;
+  font-weight: bolder;
+  font-family: "Konkhmer Sleokchher", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: transparent;
+  border: 3px solid white;
+  color: white;
+  cursor: pointer;
+  width: 230px;
+  height: 64px;
+}
+
+@media (max-width: 768px) {
+  .gyskk-background-image {
+    transform: translate(0, 0); /* Remove shift effect */
+    padding: 10px;
+    margin-bottom: 2cm; /* Adjusted for smaller screens */
+  }
+
+  .gyskk-heading {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 20;
+  }
+
+  .gyskk-text1 {
+    font-size: 10px;
+    margin-left: 0px;
+    padding-left: 350px;
+  }
+
+  .gyskk-text2 {
+    font-size: 10px;
+    margin-left: 0px;
+    padding-left: 357px;
+  }
+
+  .gyskk-get-start-btn {
+    width: 110px;
+    height: 40px;
+    font-size: 13px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer; 
+    margin-left: 370px;
+  }
+}

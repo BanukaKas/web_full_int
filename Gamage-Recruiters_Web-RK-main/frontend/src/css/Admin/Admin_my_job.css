@@ -1,0 +1,261 @@
+.Admin_my_job-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.Admin_my_job-content {
+  display: flex;
+  flex-grow: 1;
+}
+
+.Admin_my_job-container {
+  flex-grow: 1;
+  padding: 50px;
+  background-color: #f8f9fa;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+h2 {
+  font-size: 22px;
+  color: #383838;
+  margin-left: 10px;
+}
+
+p {
+  font-size: 14px;
+  color: #757575;
+  margin-left: 10px;
+}
+
+/* Stats Section */
+.Admin_my_job-stats {
+  display: flex;
+  gap: 20px;
+  margin: 10px;
+}
+
+.stat-box {
+  padding: 15px 20px;
+  width: 250px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  margin-top: 10px;
+  background-color: #DFD5E4;
+  text-align: center;
+}
+
+/* Wrapper for text */
+.stat-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+/* Number */
+.stat-text h1 {
+  font-size: 24px;
+  color: #000;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Label */
+.stat-text p {
+  font-size: 14px;
+  color: #4A4A4A;
+  margin: 0;
+}
+
+/* Icon */
+.stat-icon {
+  font-size: 26px;
+  color: #575757;
+}
+
+/* Colors */
+.purple {
+  background-color: #DFD5E4;
+}
+
+.orange {
+  background-color: #FFE0CD;
+}
+
+/* Table Styles */
+.admin-table {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  color: #646464;
+}
+
+th {
+  background: #E4E4E4;
+}
+
+.table-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #595959;
+}
+
+.view-btn {
+  background: #ffffff;
+  color: #3570E7;
+  padding: 6px 20px;
+  border-radius: 0px;
+  cursor: pointer;
+  border-color: #858585;
+}
+
+.delete-btn {
+  background: transparent;
+  color: #AC1F22;
+  font-size: 18px;
+  padding: 5px 11px;
+  cursor: pointer;
+  margin-left: 20px;
+  border-radius: 0px;
+  border-color: #E0B6B6;
+}
+
+.delete-btn:hover {
+  color: darkred;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Admin_my_job-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  .Admin_my_job-content {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .Admin_my_job-container {
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+    background-color: #f8f9fa;
+  }
+
+  .table-container {
+    width: 100%;
+    overflow-x: auto; 
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px; 
+  }
+
+  .table-title {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #383838;
+    margin-top: 1.5cm; 
+    padding-top: 20px; 
+  }
+
+  table {
+    font-size: 14px;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    min-width: 100%; 
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #646464;
+    white-space: nowrap; 
+  }
+
+  th {
+    background: #E4E4E4;
+    font-size: 14px;
+    text-transform: uppercase;
+    position: sticky;
+    top: 0; 
+    z-index: 1;
+  }
+
+  td {
+    font-size: 14px;
+  }
+
+  .view-btn, .delete-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+    white-space: nowrap; 
+  }
+
+  .delete-btn {
+    color: #AC1F22;
+    border: none;
+    background: transparent;
+  }
+
+  .delete-btn:hover {
+    color: darkred;
+  }
+
+  .stat-box {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    background: #DFD5E4;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .stat-text h1 {
+    font-size: 20px;
+    margin: 5px 0;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .stat-text p {
+    font-size: 12px;
+    color: #4A4A4A;
+  }
+
+  /* Adjust Toast Notification */
+  .toast-container {
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
